@@ -105,6 +105,24 @@ hr {
     background-attachment: fixed;
 }
 
+#home:after {
+    content: "";
+    /* stretch a fixed position to the whole screen */
+    position: fixed;
+    top: 0;
+    /* fix for mobile browser address bar appearing disappearing */
+    height: 100vh;
+    left: 0;
+    right: 0;
+    /* needed to keep in the background */
+    z-index: -1;
+    background-image: url('images/home.JPG');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #about {
     background-color: #212738;
 }
@@ -689,7 +707,7 @@ hr {
     .school .first {
         margin: 0;
     }
-    
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -192,6 +192,7 @@ hr {
 
 .school img {
     height: 150px;
+    max-height: 20%;
     display: block;
     margin: auto;
 }

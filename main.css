@@ -98,18 +98,17 @@ hr {
 
 #home:after {
     content: "";
-    /* stretch a fixed position to the whole screen */
     position: fixed;
-    /* fix for mobile browser address bar appearing disappearing */
     height: 100vh;
-    /* needed to keep in the background */
+    left: 0;
+    right: 0;
     z-index: -1;
     background-image: url('images/home.JPG');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 #about {
@@ -151,7 +150,8 @@ hr {
     margin-bottom: 10px;
     font-weight: normal;
     line-height: 1;
-    /* max-width: 80vw; */
+    max-width: 80vw;
+    margin: auto;
     text-align: center;
 }
 
@@ -171,6 +171,8 @@ hr {
 .school h4 {
     margin: 0;
     font-weight: normal;
+    max-width: 80vw;
+    margin: auto;
 }
 
 .school .first {
@@ -283,7 +285,6 @@ hr {
     text-align: center;
     color: #C3423F;
     font-size: 15vw;
-    /* max-width: 600px; */
     max-width: 100%;
     position: relative;
     font-weight: 900;

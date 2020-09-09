@@ -190,6 +190,12 @@ hr {
     max-width: 80vw;
 }
 
+.school img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
 #education {
     background-color: #353F5A;
 }
@@ -699,6 +705,9 @@ hr {
         margin: 0;
     }
 
+    .school img {
+        height: 300px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

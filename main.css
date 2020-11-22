@@ -100,21 +100,6 @@ hr {
     background-color: #353F5A;
 }
 
-#home:after {
-    /* content: "";
-    position: fixed;
-    height: 100vh;
-    left: 0;
-    right: 0; */
-    /* z-index: -1; */
-    /* background-image: url('images/home.JPG');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center; */
-}
-
 #about {
     background-color: #445174;
     z-index: 1;

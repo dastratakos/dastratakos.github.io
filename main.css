@@ -55,7 +55,6 @@ h5 {
 }
 
 .page h1 {
-    font-size: 50px;
     margin-top: 0;
     text-align: center;
     color: #C3423F;
@@ -69,6 +68,7 @@ h5 {
 }
 
 .title-heading h1 {
+    font-size: 50px;
     color: #C3423F;
     font-size: 10rem;
     opacity: .3;
@@ -96,23 +96,27 @@ hr {
     color: #F3EFE0;
 }
 
+#home {
+    background-color: #353F5A;
+}
+
 #home:after {
-    content: "";
+    /* content: "";
     position: fixed;
     height: 100vh;
     left: 0;
-    right: 0;
-    z-index: -1;
-    background-image: url('images/home.JPG');
+    right: 0; */
+    /* z-index: -1; */
+    /* background-image: url('images/home.JPG');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 #about {
-    background-color: #212738;
+    background-color: #445174;
     z-index: 1;
 }
 
@@ -223,10 +227,6 @@ hr {
     display: inline-block;
 }
 
-.skill:hover {
-    background-color: #445174;
-}
-
 #experience {
     background-color: #445174;
 }
@@ -286,13 +286,13 @@ hr {
 .landing-text {
     margin: auto;
     max-width: 75%;
+    transform: translate(0, -15vh);
 }
 
 .landing-text h1 {
     margin: auto;
     text-align: center;
     color: #C3423F;
-    font-size: 15vw;
     max-width: 100%;
     position: relative;
     font-weight: 900;
@@ -505,13 +505,6 @@ hr {
     width: 215px;
 }
 
-#sidebar h2 {
-    color: #F3EFE0;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 #sidebar ul li {
     list-style-type: none;
     padding: 15px;
@@ -519,14 +512,6 @@ hr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-
-#sidebar ul li {
-    padding: 15px;
-    border-bottom: 1px solid #EBBBAD;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
 
 #sidebar ul li a {
     color: #EBBBAD;
@@ -675,7 +660,6 @@ hr {
     }
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
@@ -714,3 +698,37 @@ hr {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+/* Landing page animations */
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #353F5A, #212738);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero {
+    height: 60%;
+    width: 80%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    transform: translate(0, -12vh);
+}

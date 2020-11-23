@@ -71,14 +71,14 @@ h5 {
   font-size: 50px;
   color: #C3423F;
   font-size: 10rem;
-  opacity: .3;
+  opacity: .2;
   margin: 0;
 }
 
 .title-heading h6 {
   color: #C3423F;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -270,7 +270,7 @@ hr {
 
 .landing-text {
   margin: auto;
-  max-width: 75%;
+  max-width: 80%;
   transform: translate(0, -15vh);
 }
 
@@ -294,10 +294,10 @@ hr {
 .landing-text h1:before {
   content: "";
   display: block;
-  width: 75px;
+  width: 10%;
   height: 2px;
   background: #C3423F;
-  left: -80px;
+  left: -5%;
   top: 50%;
   position: absolute;
 }
@@ -305,10 +305,10 @@ hr {
 .landing-text h1:after {
   content: "";
   display: block;
-  width: 75px;
+  width: 10%;
   height: 2px;
   background: #C3423F;
-  right: -80px;
+  right: -5%;
   top: 50%;
   position: absolute;
 }
@@ -320,10 +320,6 @@ hr {
   font-weight: normal;
   font-size: 30px;
   margin: 10px;
-}
-
-.landing-text h3 {
-  color: #C3423F;
 }
 
 /* Hamburger CSS from https://jonsuh.com/hamburgers/#usage */
@@ -657,11 +653,7 @@ hr {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .landing-text h1 {
-    font-size: 7.5vw;
-  }
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

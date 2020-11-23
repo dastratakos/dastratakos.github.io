@@ -491,6 +491,10 @@ hr {
   width: 215px;
 }
 
+#sidebar ul {
+  white-space: nowrap;
+}
+
 #sidebar ul li {
   list-style-type: none;
   padding: 15px;
@@ -519,7 +523,6 @@ hr {
 
 #sidebar .social_media {
   position: absolute;
-  /* bottom: 140px; */
   left: 50%;
   transform: translateX(-50%);
   display: flex;

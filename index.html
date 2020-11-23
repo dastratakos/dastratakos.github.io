@@ -47,7 +47,7 @@
       <div class="page" id="home">
         <section>
           <div class="hero">
-            <div class="landing-text">
+            <div id="landing-text">
               <h2 class="hi">Hi, I'm</h2>
               <h1 class="name" style="font-size: 6vw">Dean Stratakos</h1>
             </div>
@@ -576,10 +576,12 @@
       var hamburger = document.querySelector(".hamburger");
       var sidebar = document.getElementById("sidebar");
       var main = document.getElementById("main");
+      var landing_text = document.getElementById("landing-text");
       hamburger.addEventListener("click", function () {
         hamburger.classList.toggle("is-active");
         sidebar.classList.toggle("is-active");
         main.classList.toggle("is-active");
+        landing_text.classList.toggle("is-active");
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"

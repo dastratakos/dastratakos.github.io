@@ -61,3 +61,30 @@ function includeHTML() {
   }
 }
 includeHTML();
+
+/* Project modals */
+const buttons = document.getElementsByClassName("read-more-button");
+console.log(`buttons: ${buttons}`)
+
+for (var i = 0; i < buttons.length; i++) {
+  const button = buttons[i];
+  const dataTarget = button.getAttribute("data-target");
+  const modal = document.querySelector(dataTarget);
+
+  console.log(`dataTarget: ${dataTarget}`);
+  console.log(`modal: ${modal}`)
+  const closeButton = modal.querySelector(".close-button");
+
+
+  button.addEventListener("click", () => {
+    modal.classList.toggle("show-modal");
+  });
+  closeButton.addEventListener("click", () => {
+    modal.classList.toggle("show-modal");
+  });
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.toggle("show-modal");
+    }
+  });
+};

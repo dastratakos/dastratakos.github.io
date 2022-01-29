@@ -86,7 +86,7 @@
 
 .project .view-code-button {
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px;
   border-radius: 5px;
   background-color: #c3423f;
   border: 1px solid transparent;

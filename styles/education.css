@@ -1,0 +1,72 @@
+#education {
+  background-color: #353f5a;
+}
+
+.school {
+  color: #f3efe0;
+}
+
+.school h1 {
+  color: #f3efe0;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: normal;
+  line-height: 1;
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+.school h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.school h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.school h4 {
+  margin: 0;
+  font-weight: normal;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.school .first {
+  margin-top: 20px;
+}
+
+.school .descriptor {
+  text-transform: uppercase;
+  color: #c3423f;
+  font-weight: bold;
+}
+
+.school ul {
+  margin: 0;
+  max-width: 80vw;
+}
+
+.school img {
+  height: 150px;
+  max-height: 20%;
+  display: block;
+  margin: auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .school .first {
+    margin: 0;
+  }
+
+  .school img {
+    height: 300px;
+  }
+}

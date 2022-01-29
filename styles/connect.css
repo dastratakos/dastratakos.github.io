@@ -1,0 +1,61 @@
+#connect {
+  background-color: #353f5a;
+}
+
+#connect .connect_social_media {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#connect .fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+#connect .fab:hover {
+  opacity: 0.7;
+}
+
+#connect .fa-facebook-f {
+  background: #3b5998;
+  color: white;
+}
+
+#connect .fa-linkedin-in {
+  background: #007bb5;
+  color: white;
+}
+
+#connect .fa-instagram {
+  background: -webkit-linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  color: white;
+}
+
+#connect .fa-github,
+.fa-github-square {
+  background: white;
+  color: black;
+}

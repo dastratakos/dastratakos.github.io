@@ -70,11 +70,7 @@ for (var i = 0; i < buttons.length; i++) {
   const button = buttons[i];
   const dataTarget = button.getAttribute("data-target");
   const modal = document.querySelector(dataTarget);
-
-  console.log(`dataTarget: ${dataTarget}`);
-  console.log(`modal: ${modal}`)
   const closeButton = modal.querySelector(".close-button");
-
 
   button.addEventListener("click", () => {
     modal.classList.toggle("show-modal");

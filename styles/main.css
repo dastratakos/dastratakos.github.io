@@ -66,7 +66,8 @@ h5 {
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .title-heading h1 {
@@ -75,6 +76,7 @@ h5 {
   font-size: 10rem;
   opacity: 0.2;
   margin: 0;
+  visibility: hidden;
 }
 
 .title-heading h6 {
@@ -135,6 +137,10 @@ hr {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .page-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -162,4 +168,7 @@ hr {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .title-heading h1 {
+    visibility: visible;
+  }
 }

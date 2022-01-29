@@ -40,8 +40,11 @@ h5 {
   transform: translateY(-5px);
 }
 
-.vertical-horizontal-center {
-  padding: 50px;
+.page-content {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 1200px;
 }
 
 .page {
@@ -125,6 +128,9 @@ hr {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .page-content {
+    padding: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

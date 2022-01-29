@@ -1,0 +1,158 @@
+#projects {
+  background-color: #353f5a;
+}
+
+.projects-container {
+  padding: 0;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100vw;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 25%;
+  padding: 30px;
+  margin: 20px;
+  background: #212738;
+  border-radius: 10px;
+  color: #f3efe0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project h2 {
+  color: #f3efe0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  text-align: left;
+  margin: 0;
+  color: #f3efe0;
+  font-weight: normal;
+}
+
+.project h4 {
+  text-align: left;
+  margin: 0;
+  color: #f3efe0;
+  font-weight: normal;
+}
+
+.project h5 {
+  text-align: left;
+  margin-top: 0;
+  color: #f3efe0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3efe0;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.project .project-buttons-container {
+  display: flex;
+}
+
+.project .read-more-button {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f3efe0;
+  border: 1px solid transparent;
+  color: #212738;
+  padding: 10px;
+}
+
+.project .read-more-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f3efe0;
+  color: #f3efe0;
+}
+
+.project .view-code-button {
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #c3423f;
+  border: 1px solid transparent;
+  color: #f3efe0;
+  padding: 10px;
+}
+
+.project .view-code-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #c3423f;
+  color: #c3423f;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* https://sabe.io/tutorials/how-to-create-modal-popup-box */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

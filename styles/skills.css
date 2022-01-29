@@ -1,0 +1,20 @@
+#skills {
+  background-color: #212738;
+}
+
+#skills-container {
+  display: flex;
+  width: 75%;
+  max-width: 80vw;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.skill {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #f3efe0;
+  border-radius: 5px;
+  display: inline-block;
+}

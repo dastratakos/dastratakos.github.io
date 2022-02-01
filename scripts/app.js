@@ -63,7 +63,7 @@ function includeHTML() {
 includeHTML();
 
 /* Project modals */
-const buttons = document.getElementsByClassName("read-more-button");
+const buttons = document.getElementsByClassName("button-white");
 console.log(`buttons: ${buttons}`)
 
 for (var i = 0; i < buttons.length; i++) {

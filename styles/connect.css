@@ -2,10 +2,10 @@
   background-color: #353f5a;
 }
 
-#connect .connect_social_media {
-  display: inline-block;
-  margin-left: 50%;
-  transform: translateX(-50%);
+#connect .page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #connect .fab {

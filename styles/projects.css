@@ -35,7 +35,7 @@
 }
 
 .project h3 {
-  text-align: left;
+  text-align: left !important;
   margin: 0;
   color: #f3efe0;
   font-weight: normal;
@@ -66,39 +66,6 @@
 
 .project .project-buttons-container {
   display: flex;
-}
-
-.project .read-more-button {
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #f3efe0;
-  border: 1px solid transparent;
-  color: #212738;
-  padding: 10px;
-}
-
-.project .read-more-button:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #f3efe0;
-  color: #f3efe0;
-}
-
-.project .view-code-button {
-  display: inline-block;
-  margin-right: 20px;
-  border-radius: 5px;
-  background-color: #c3423f;
-  border: 1px solid transparent;
-  color: #f3efe0;
-  padding: 10px;
-}
-
-.project .view-code-button:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #c3423f;
-  color: #c3423f;
 }
 
 .no-select {

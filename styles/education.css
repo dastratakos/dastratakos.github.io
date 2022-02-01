@@ -4,7 +4,8 @@
 
 .school {
   color: #f3efe0;
-  margin: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .school h1 {
@@ -63,6 +64,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .school {
+    margin: 100px;
+  }
+
   .school .first {
     margin: 0;
   }

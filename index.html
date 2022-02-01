@@ -4,23 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="styles/main.css">
-
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/connect.css">
-  <link rel="stylesheet" href="styles/education.css">
-  <link rel="stylesheet" href="styles/experience.css">
-  <link rel="stylesheet" href="styles/hamburger.css">
-  <link rel="stylesheet" href="styles/hero.css">
-  <link rel="stylesheet" href="styles/home.css">
-  <link rel="stylesheet" href="styles/projects.css">
-  <link rel="stylesheet" href="styles/sidebar.css">
-  <link rel="stylesheet" href="styles/skills.css">
-  <link rel="stylesheet" href="styles/svg.css">
-
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -67,7 +52,7 @@
       <section>
         <div class="hero">
           <div id="landing-text">
-            <h2 class="hi">Hi, I'm</h2>
+            <h2 class="hi">Hi, I’m</h2>
             <h1 class="name" style="font-size: 6vw">Dean Stratakos</h1>
           </div>
           <img src="./images/home.JPG">
@@ -84,20 +69,26 @@
           <h6>About</h6>
         </div>
         <div class="split-container">
-          <div style="flex: 1" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="750">
+          <div class="about-left" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="750">
             <img src="images/backhand.JPG">
           </div>
-          <div style="flex: 1" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="750">
-            <p style="margin-left: 12.5%; margin-right: 12.5%; max-width: 100vw;">
-              I am a junior at Stanford University studying Computer Science with a focus in Artificial Intelligence.
-              My interests lie in artificial intelligence, machine learning, computer vision, and natural language
-              processing. I am also a member of the varsity
+          <div class="about-right" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="750">
+            <p class="about-description">
+              I am a student at Stanford University studying Computer Science. I am pursuing a Master’s degree on the
+              Artificial Intelligence track and a Bachelor’s degree on the Computer Systems track. My interest lie in
+              the intersection of my studies: AI, ML, computer vision, natural language processing, low-latency systems,
+              and more. I am also a member of the varsity
               <a class="link" target="_blank"
                 href="https://gostanford.com/sports/mens-tennis/roster/dean-stratakos/16641">Stanford Men’s Tennis
                 team</a>.
               Outside of academics and athletics, I love biking with my younger brother and sister, going on hikes,
               and trying new food.
             </p>
+            <a href="Dean Stratakos Resume.pdf" target="_blank">
+              <div class="button-red no-select">
+                Resume <i class="fas fa-file"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -113,7 +104,7 @@
           <div class="school-title" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="750">
             <h1>Stanford University</h1>
             <h2>Stanford, CA</h2>
-            <h3>September 2018 - June 2022</h3>
+            <h3>September 2018 - June 2023</h3>
           </div>
           <div class="split-container">
             <div style="flex: 1;" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="750">
@@ -121,8 +112,10 @@
             </div>
             <div style="flex: 1;" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="750">
               <div style="float: left;">
-                <h4 class="first"><span class="descriptor">Major: </span>Computer Science (Artificial Intelligence
-                  track)</h4>
+                <h4 class="first">
+                  <span class="descriptor">Master’s: </span>Computer Science, Artificial Intelligence (’23)
+                </h4>
+                <h4><span class="descriptor">Bachelor’s: </span>Computer Science, Computer Systems (’22)</h4>
                 <h4><span class="descriptor">GPA: </span>4.05/4.00</h4>
                 <h4><span class="descriptor">Tau Beta Pi member</span></h4>
                 <h4><span class="descriptor">Relevant coursework:</span></h4>
@@ -309,7 +302,7 @@
               involved collecting used cooking oil from local restaurants and selling the oil to recycling plants,
               which turned it into biodiesel fuel (a renewable, biodegradable fuel). We donated the proceeds - which
               had reached upwards of $13,000 by 2018 - to underfunded departments at Saratoga High School. For
-              instance, we purchased a 3D printer for our school's Engineering Department.
+              instance, we purchased a 3D printer for our school’s Engineering Department.
             </p>
           </div>
         </div>
@@ -335,7 +328,7 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project1">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project1">Read more</div> -->
             </div>
           </div>
 
@@ -354,7 +347,7 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project2">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project2">Read more</div> -->
             </div>
           </div>
 
@@ -371,7 +364,7 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project3">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project3">Read more</div> -->
             </div>
           </div>
 
@@ -388,9 +381,9 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project4">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project4">Read more</div> -->
               <a href="https://github.com/dastratakos/Pulse" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   View code <i class="fab fa-github"></i>
                 </div>
               </a>
@@ -404,14 +397,14 @@
               <h4>Python</h4>
               <h5>Feb 2021 - Mar 2021</h5>
               <p>
-                For the Social Events division of Stanford's Student Advisory Committee, I coded an algorithm to match
+                For the Social Events division of Stanford’s Student Advisory Committee, I coded an algorithm to match
                 student-athletes based on responses from a survey.
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project5">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project5">Read more</div> -->
               <a href="https://github.com/dastratakos/AthleteMingle" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   View code <i class="fab fa-github"></i>
                 </div>
               </a>
@@ -430,9 +423,9 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project6">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project6">Read more</div> -->
               <a href="https://github.com/dastratakos/Face-Mask-Detection" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   View code <i class="fab fa-github"></i>
                 </div>
               </a>
@@ -451,14 +444,14 @@
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project7">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project7">Read more</div> -->
               <a href="https://github.com/dastratakos/Photo-Sharing-Web-Application" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   View code <i class="fab fa-github"></i>
                 </div>
               </a>
               <a href="https://youtu.be/mFzJm07WL5A" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   Demo <i class="fab fa-youtube"></i>
                 </div>
               </a>
@@ -472,16 +465,16 @@
               <h4>Python</h4>
               <h5>Mar 2020</h5>
               <p>
-                My partner and I enhanced Google's ALBERT language model with a custom PyTorch verifier that answers
+                My partner and I enhanced Google’s ALBERT language model with a custom PyTorch verifier that answers
                 factual questions from Wikipedia passages. We achieved 85% F1 accuracy on the
                 <a class="link" target="_blank" href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD 2.0
                   challenge</a>.
               </p>
             </div>
             <div class="project-buttons-container">
-              <!-- <div class="read-more-button no-select" data-target="#project8">Read more</div> -->
+              <!-- <div class="button-white no-select" data-target="#project8">Read more</div> -->
               <a href="https://github.com/charleslpan/Wikipedia-QA-with-ALBERT-Verifier" target="_blank">
-                <div class="view-code-button no-select">
+                <div class="button-red no-select">
                   View code <i class="fab fa-github"></i>
                 </div>
               </a>

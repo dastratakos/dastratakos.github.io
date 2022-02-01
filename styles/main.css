@@ -1,3 +1,15 @@
+@import "about.css";
+@import "connect.css";
+@import "education.css";
+@import "experience.css";
+@import "hamburger.css";
+@import "hero.css";
+@import "home.css";
+@import "projects.css";
+@import "sidebar.css";
+@import "skills.css";
+@import "svg.css";
+
 html,
 body {
   font-family: "Avenir Next";
@@ -63,6 +75,9 @@ h5 {
 }
 
 .title-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
@@ -76,7 +91,6 @@ h5 {
   font-size: 10rem;
   opacity: 0.2;
   margin: 0;
-  visibility: hidden;
 }
 
 .title-heading h6 {
@@ -128,6 +142,39 @@ hr {
   color: #c3423f;
 }
 
+.button-white {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f3efe0;
+  border: 1px solid transparent;
+  color: #212738;
+  padding: 10px;
+}
+
+.button-white:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f3efe0;
+  color: #f3efe0;
+}
+
+.button-red {
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #c3423f;
+  border: 1px solid transparent;
+  color: #f3efe0;
+  padding: 10px;
+}
+
+.button-red:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #c3423f;
+  color: #c3423f;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .page-content {
@@ -168,7 +215,4 @@ hr {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .title-heading h1 {
-    visibility: visible;
-  }
 }

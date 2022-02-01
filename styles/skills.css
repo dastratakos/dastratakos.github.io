@@ -4,10 +4,10 @@
 
 #skills-container {
   display: flex;
-  width: 75%;
-  max-width: 80vw;
+  width: 95%;
   margin: auto;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .skill {
@@ -17,4 +17,12 @@
   border: 2px solid #f3efe0;
   border-radius: 5px;
   display: inline-block;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #skills-container {
+    width: 75%;
+    max-width: 80vw;
+  }
 }

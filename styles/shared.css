@@ -33,13 +33,6 @@ h5 {
   transition: 0.3s;
 }
 
-.profile_img:hover {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
 .page-content {
   width: 100%;
   padding-left: 24px;
@@ -126,10 +119,6 @@ hr {
   color: #f3efe0;
 }
 
-.link:hover {
-  color: #c3423f;
-}
-
 .button-white {
   display: inline-block;
   border-radius: 5px;
@@ -137,13 +126,6 @@ hr {
   border: 1px solid transparent;
   color: #212738;
   padding: 10px;
-}
-
-.button-white:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #f3efe0;
-  color: #f3efe0;
 }
 
 .button-red {
@@ -154,13 +136,6 @@ hr {
   border: 1px solid transparent;
   color: #f3efe0;
   padding: 10px;
-}
-
-.button-red:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #c3423f;
-  color: #c3423f;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -180,6 +155,31 @@ hr {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* Don't allow hover effects on mobile devices (e.g. iPhones) */
+  .profile_img:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  .link:hover {
+    color: #c3423f;
+  }
+
+  .button-white:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #f3efe0;
+    color: #f3efe0;
+  }
+
+  .button-red:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #c3423f;
+    color: #c3423f;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

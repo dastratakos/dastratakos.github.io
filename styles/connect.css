@@ -59,3 +59,11 @@
   background: white;
   color: black;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Don't allow hover effects on mobile devices (e.g. iPhones) */
+  #connect .fab:hover {
+    opacity: 0.7;
+  }
+}

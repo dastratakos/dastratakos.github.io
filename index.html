@@ -74,10 +74,10 @@
           </div>
           <div class="about-right" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="750">
             <p class="about-description">
-              I am a student at Stanford University studying Computer Science. I am pursuing a Master’s degree on the
-              Artificial Intelligence track and a Bachelor’s degree on the Computer Systems track. My interests lie in
-              the intersection of my studies: AI, ML, computer vision, natural language processing, low-latency systems,
-              and more. I am also a member of the varsity
+              I am a student at Stanford University studying Computer Science. I graduated with a Bachelor’s degree on
+              the Computer Systems track in June of 2022 and am pursuing a Master’s degree on the Artificial
+              Intelligence track. My interests lie in the intersection of my studies: AI, ML, computer vision, natural
+              language processing, low-latency systems, and more. While an undergrad, I was also a member of the varsity
               <a class="link" target="_blank"
                 href="https://gostanford.com/sports/mens-tennis/roster/dean-stratakos/16641">Stanford Men’s Tennis
                 team</a>.
@@ -116,7 +116,7 @@
                   <span class="descriptor">Master’s: </span>Computer Science, Artificial Intelligence (’23)
                 </h4>
                 <h4><span class="descriptor">Bachelor’s: </span>Computer Science, Computer Systems (’22)</h4>
-                <h4><span class="descriptor">GPA: </span>4.05/4.00</h4>
+                <h4><span class="descriptor">GPA: </span>4.10/4.00</h4>
                 <h4><span class="descriptor">Tau Beta Pi member</span></h4>
                 <h4><span class="descriptor">Relevant coursework:</span></h4>
                 <ul>
@@ -125,9 +125,12 @@
                   <li>CS 231N: Convolutional Neural Networks for Visual Recognition</li>
                   <li>CS 228: Probabilistic Graphical Models</li>
                   <li>CS 229: Machine Learning</li>
+                  <li>CS 224U: Natural Language Understanding</li>
                   <li>CS 224N: Natural Language Processing with Deep Learning</li>
                   <li>CS 221: Artificial Intelligence: Principles and Techniques</li>
                   <li>CS 245: Principles of Data-Intensive Systems</li>
+                  <li>CS 194W: Senior Project</li>
+                  <li>CS 190: Software Design Studio</li>
                   <li>CS 168: The Modern Algorithmic Toolbox</li>
                   <li>CS 161: Design and Analysis of Algorithms</li>
                   <li>CS 155: Computer and Network Security</li>
@@ -188,17 +191,42 @@
         </div>
         <div class="tilesWrap">
           <div class="tile" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
+            <img src="images/experience/apple_logo.PNG">
+            <h1>Apple</h1>
+            <h3>Software Engineering Intern</h3>
+            <h4>Seattle, WA</h4>
+            <h5>Jun 2022 - Sep 2022</h5>
+            <p>
+              Coming back to Apple for my third internship, in the 2022 summer I interned with the Siri Information
+              Intelligence team. My team was responsible for handling all Siri requests related to the "information
+              domains." This encompasses queries such as weather, sports, music, general knowledge, etc. and not
+              personal queries such as sending messages, making phone calls, setting timers, etc.
+
+              <br /><br />
+
+              Siri has been making a large effort to migrate as much logic on-device as possible, and my work involved
+              building three new features related to personalization. While I am not allowed to talk about the details,
+              I can talk about how this internship contrasted from my previous positions. This role was eye-opening to
+              me in that building the new features required coordination across at least five different teams, who each
+              played a role in the success of the features. Moreover, much of the responsibility was placed upon me to
+              make the significant design decisions since I was the one with the clargest visibility across all the
+              teams.
+            </p>
+          </div>
+          <div class="tile" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
             <img src="images/experience/curious_cardinals_logo.svg">
             <h1>Curious Cardinals</h1>
             <h3>Computer Science Tutor</h3>
             <h4>Stanford, CA</h4>
-            <h5>Jan 2021 - present</h5>
+            <h5>Jan 2021 - Jun 2022</h5>
             <p>
               Since a young age, one of my passions has been teaching. I love passing on the torch and seeing others
-              learn and grow as they pick up new concepts. Curious Cardinals has allowed me to continue my passion
-              through one-on-one computer science tutoring. I have helped a high schooler prepare for
-              <a class="link" target="_blank" href="http://usaco.org">USACO Silver</a>, and now I teach Python
-              fundamentals to a middle schooler.
+              learn and grow as they pick up new concepts.
+              <a class="link" target="_blank" href="https://www.curiouscardinals.com">Curious Cardinals</a> has allowed
+              me to continue my passion through one-on-one computer science tutoring. I helped a high schooler prepare
+              for
+              <a class="link" target="_blank" href="http://usaco.org">USACO Silver</a>, and I taught Python fundamentals
+              to middle and high schoolers.
             </p>
           </div>
           <div class="tile" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
@@ -211,8 +239,21 @@
               I spent my 2021 summer in New York at <a class="link" target="_blank"
                 href="https://www.citadel.com">Citadel</a>.
               I redesigned the recovery mechanism between market gateway and market connector nodes on Citadel’s
-              internal trading platform. To accomplish this, I collaborated with traders to respond to several urgent
-              production issues.
+              internal trading platform. Although their communication was built on top of TCP, which is itself reliable,
+              their servers were extremely resource-constrained, causing the nodes to drop information within the
+              servers, not over the network. Thus, it was necessary to build in additional redundancies to recover from
+              high-volume situations to make sure every market trade was accounted for.
+
+              <br /><br />
+
+              My work involved devising a failproof mechanism using persistent storage that would allow crashed servers
+              to resume execution in the exact same state. The rebooted servers also had to communicate with other nodes
+              the last information it had received before crashing.
+
+              <br /><br />
+
+              Throughout the summer, I also responded to four urgent production issues, collaborating with traders to
+              push patches as quickly as possible.
             </p>
           </div>
           <div class="tile" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
@@ -222,9 +263,31 @@
             <h4>Portland, OR (remote)</h4>
             <h5>Oct 2020 - Jan 2021</h5>
             <p>
-              For the 2020 fall quarter, I only enrolled in five units of courses so that I could work as an
-              Algorithms R&D Intern for a new team at Apple. My project involves detecting induced
-              <a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Parallax">Parallax</a> in videos.
+              For the 2020 fall quarter, I worked as an Algorithms R&D Intern for a new team at Apple while enrolled in
+              five units at school. The team was investigating applications to take advantage of the LiDAR sensor
+              introduced in the iPhone 12 product line, particularly with regards to photo and video.
+
+              <br /><br />
+
+              One such application was to detect "interesting" motion in Live Photos, which would allow for more
+              intelligently suggestions for Live Photo effects (loop, bounce, or long exposure). Motion in a Live Photo
+              can largely be classified into one of two categories. The first category is motion caused by a moving
+              camera (i.e. photographer had a shaky hand), and this motion results in "uninteresting" Live Photos. The
+              second category is motion caused by subjects moving in the real world (i.e. person doing a cartwheel),
+              which typically results in "interesting" Live Photos.
+
+              <br /><br />
+
+              In order to distinguish between these two types of motion, my project involved quantifying the amount of
+              <a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Parallax">parallax</a> in a given
+              video. By computing per-pixel parallax values for each frame in a video, I could predict with certain
+              confidence which category of motion was present in a video if any. The computation involved combining
+              depth data from the LiDAR camera with camera translation data from the gyroscopic sensors. Along the way,
+              I implemented a
+              <a class="link" target="_blank" href="https://github.com/dastratakos/Homography-Estimation">homography
+                estimation algorithm</a>
+              to help identify outliers in parallax computations. To aide in presentations and demos, I developed visual
+              representations using Matplotlib and OpenCV.
             </p>
             <div class="experience-separator">
               <hr />
@@ -233,7 +296,7 @@
             <h4>Cupertino, CA (remote)</h4>
             <h5>Jul 2020 - Sep 2020</h5>
             <p>
-              This past summer, I worked (remotely) on a machine learning project for Apple. My task was to improve
+              In the summer of 2020, I worked (remotely) on a machine learning project for Apple. My task was to improve
               the performance of a model that clusters duplicate crash log files together. The tool is now used
               internally by triage engineeers to reduce the high volume of manual labor on their plates. The ML
               pipeline utilizes a Scikit-learn function called
@@ -318,17 +381,64 @@
         <div class="projects-container">
           <div class="project" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
             <div class="project-content">
+              <h2>Classy</h2>
+              <h3>Social education app</h3>
+              <h4>TypeScript, Python</h4>
+              <h5>Mar 2022 - Jun 2022</h5>
+              <p>
+                For my CS 194W senior project, I built a social app for Stanford students to see what classes their
+                friends are taking. This is an app I always wanted during my time at school, and I was thrilled to be
+                able to dream it into existence.
+
+                <br /><br />
+
+                The frontend was built using React Native/Expo, and I leveraged Firebase for the backend.
+              </p>
+            </div>
+            <div class="project-buttons-container">
+              <!-- <div class="button-white no-select" data-target="#project4">Read more</div> -->
+              <a href="https://apps.apple.com/us/app/stanford-classy/id1624193039" target="_blank">
+                <div class="button-red no-select">
+                  App Store <i class="fab fa-app-store"></i>
+                </div>
+              </a>
+              <a href="https://play.google.com/apps/internaltest/4701353658390578054" target="_blank">
+                <div class="button-red no-select">
+                  Play Store <i class="fab fa-google-play"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
+            <div class="project-content">
+              <h2>Sarcasm Detection</h2>
+              <h3>An NLP model (CS 224U final project)</h3>
+              <h4>Python</h4>
+              <h5>May 2022 - Jun 2022</h5>
+              <p>
+                This model explores how computer models might be able to detect the complex subtleties and nuances of
+                sarcasm in the English language.
+
+                <br /><br />
+
+                We trained ALBERT and XLNet NLU models by fine-tuning on the SARC dataset. Our model achieved Macro-F1
+                scores of 74%, out-performing all four of our baselines by 6% and demonstrating a 4% improvement over an
+                attempt from three years prior.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">
+            <div class="project-content">
               <h2>alohai</h2>
               <h3>Social media app</h3>
               <h4>React Native, Firebase</h4>
               <h5>Mar 2021 - Dec 2021</h5>
               <p>
                 Alohai is a social media app designed to help people make quick, spontaneous plans with friends. My team
-                and I launched the app to Apple TestFlight and are planning to launch to the App Store soon!
+                and I launched the app to Apple TestFlight and tested with a user base of around 200 people.
               </p>
-            </div>
-            <div class="project-buttons-container">
-              <!-- <div class="button-white no-select" data-target="#project1">Read more</div> -->
             </div>
           </div>
 
@@ -557,6 +667,7 @@
           <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">HTML</div>
           <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">CSS</div>
           <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">JavaScript</div>
+          <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">TypeScript</div>
           <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">SQL</div>
           <div class="skill" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="750">LaTeX</div>
         </div>
@@ -632,7 +743,7 @@
 
     <div id="footer">
       <p style="margin:0">Designed and made by me</p>
-      <p style="margin:0">Last updated in January 2022</p>
+      <p style="margin:0">Last updated in October 2022</p>
     </div>
 
   </div>
